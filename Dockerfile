@@ -1,6 +1,6 @@
 # Template
 # Contains pytorch, torchvision, cuda, cudnn
-FROM nvcr.io/nvidia/pytorch:22.04-py3
+FROM nvcr.io/nvidia/pytorch:23.08-py3
 
 # Mantainer
 LABEL maintainer="Jaime Barranco @jaimebarran"
@@ -23,6 +23,7 @@ RUN pip install --upgrade git+https://github.com/FabianIsensee/hiddenlayer.git
 
 # Build image
 # docker build --no-cache -t jaimebarran/nnunet:0.1.0 .
+# docker build -t jaimebarran/nnunet:0.1.0 .
 
 # Run container interactively (local image)
 # docker run -it --rm docker.io/jaimebarran/nnunet:0.1.0 /bin/bash
